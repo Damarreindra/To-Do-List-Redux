@@ -1,0 +1,30 @@
+.container-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.check{
+    margin-top: px;
+    margin-right: 5px;
+}
+
+.list{
+    display: flex;
+}
+
+.list h3{
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.pages-btn{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.pages-btn Button{
+    background-color: #FB2576;
+}

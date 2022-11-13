@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;600&display=swap');
+.utama {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Sono', sans-serif;
+  color: white;
+  margin-top: 25px ;
+}
+
