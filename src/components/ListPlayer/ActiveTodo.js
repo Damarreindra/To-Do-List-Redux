@@ -9,6 +9,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 import './list.css'
 import { useState } from 'react'
 
@@ -59,7 +60,11 @@ useEffect(()=>{
         getListPlayerResult.map((todo)=>{
           if(todo.isDone === false){
           return(
-            <div className='container-list' key={todo.id}>
+            <motion.div 
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className='container-list' key={todo.id}>
               <Form.Check 
                 className='check'
                 type="switch"
@@ -91,7 +96,7 @@ useEffect(()=>{
               </IconButton>
               </div>
               </div>
-            </div>
+            </motion.div>
            
           )
       }})
